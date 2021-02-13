@@ -39,7 +39,7 @@ def generate_password():
 
 
 def main():
-    print('Welcome to Accounts Management. Use the followCing commands to proceed: CA = create account, SI = sign in')
+    print('Welcome to Accounts Management. Use the following commands to proceed: CA = create account, SI = sign in')
     short_code = input().lower()
     if short_code == 'ca':
         print('Enter new account details')
@@ -147,7 +147,7 @@ def main():
             print('*' * 100)
 
         elif short_code == 'ex':
-            print('Goodbye')
+            print('Sayounara')
             print('*' * 100)
             break
 
