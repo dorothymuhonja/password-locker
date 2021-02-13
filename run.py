@@ -8,7 +8,8 @@ def create_user(username, password):
 
 def sign_in(username, password):
     user_exists = User.user_exist(username, password)
-    return user_exists
+    if sign_in != False:
+        return user_exists
 
 def save_user(user):
     user.save_user()
@@ -38,7 +39,7 @@ def generate_password():
 
 
 def main():
-    print('Welcome to Accounts Management. Use the following commands to proceed: CA = create account, SI = sign in')
+    print('Welcome to Accounts Management. Use the followCing commands to proceed: CA = create account, SI = sign in')
     short_code = input().lower()
     if short_code == 'ca':
         print('Enter new account details')

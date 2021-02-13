@@ -93,7 +93,10 @@ class TestCredentials(unittest.TestCase):
         Displays all credentials saved by the user
         """
         self.assertEqual(Credentials.display_credentials(), Credentials.credential_list)
-
+    
+    def test_generate_password(self):
+        generated_password = self.new_credentials.generate_password()
+        self.assertEqual(len(generated_password), 8)
 
 
 if __name__ == '__main__':

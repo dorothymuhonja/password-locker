@@ -74,6 +74,7 @@ class Credentials:
         for credentials in cls.credential_list:
             if credentials.account_name == account_name:
                 return True 
+
             return False
 
     @classmethod
@@ -83,8 +84,9 @@ class Credentials:
         Display all credentials in the credentials list
         """
         return cls.credential_list
+        
 
-    def generate_password(self,stringLength = 8):
+    def generate_password(self, stringLength = 8):
         """
         Generate random passwords 8 characters long
         """
